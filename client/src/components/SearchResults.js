@@ -3,7 +3,6 @@ import {StyledResults, StyledBody} from './style/SearchResults.css.js'
 import { Link } from 'react-router-dom'
 var slugify = require('slugify')
 
-
 const SearchResults = (props) => {
     return (
       <>

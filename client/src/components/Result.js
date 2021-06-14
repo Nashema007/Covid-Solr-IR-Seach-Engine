@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 const Result = ({match}) => {
     const [searchResultList, setSearchResultList] = useState(null)
     let param = match.params.title
-    console.log(param)
-    let url = `http://localhost:3001/api/doc/`
+    let url = 'http://localhost:3001/api/doc/'
     useEffect(()=>{
     axios.get(url,  {
         params: {
@@ -20,6 +19,7 @@ const Result = ({match}) => {
     console.log(error);
     })
     .then(response =>{
+        console.log(response)
     if (response.data.statusCode !== 404){
         let data = response.data
         console.log(data)

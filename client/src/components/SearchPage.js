@@ -15,10 +15,10 @@ const SearchPage = (props) => {
       }
       let param = ""
       const inputString = input.split(" ")
-      if (inputString.length > 2 && inputString.length <= 3){
+      if (inputString.length >= 1 && inputString.length <= 3){
         param = input.toLowerCase()
       }
-     let url = `http://localhost:3001/api/`
+     let url = 'http://localhost:3001/api/'
       useEffect(()=>{
         axios.get(url,  {
           params: {

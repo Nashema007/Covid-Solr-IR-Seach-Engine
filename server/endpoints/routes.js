@@ -1,11 +1,12 @@
 
 let router = require('express').Router()
 let solr = require('solr-client')
+const { solr_port, solr_core, solr_host } = require('../../config.js')
 // client connects to solr host
 var client = solr.createClient({
-	host : "localhost",
-	port : "8983",
-	core : "chkashcore"
+	host : solr_host,
+	port : solr_port,
+	core : solr_core
 });
 
 
