@@ -1,4 +1,4 @@
-### create an .env file in the server main directry and specify the following environment variavbles
+#### create an .env file in the server main directry and specify the following environment variavbles
 # SOLR_PORT= ####
 # SOLR_CORE= ####
 # SOLR_HOST= localhost
