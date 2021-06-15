@@ -1,6 +1,6 @@
 ##### create an .env file in the server main directry and specify the following environment variavbles
-#####  SOLR_PORT= ####
-#####  SOLR_CORE= ####
+#####  SOLR_PORT= ****
+#####  SOLR_CORE= ****
 #####  SOLR_HOST= localhost
 #####  FRONT_END_END_POINT = http://localhost:3000
 #####  In order to run website, run npm install in the main directory and in the client folder
